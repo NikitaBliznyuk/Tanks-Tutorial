@@ -67,7 +67,7 @@ public class CameraControl : MonoBehaviour
 
     private float FindRequiredSize()
     {
-        Vector3 desiredLocalPos = transform.InverseTransformPoint(m_DesiredPosition);
+        Vector3 desiredLocalPos = transform.InverseTransformPoint(m_DesiredPosition); // transforms from world space to local space
 
         float size = 0f;
 
